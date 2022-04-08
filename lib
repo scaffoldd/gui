@@ -27,8 +27,8 @@ local Library = {
     FontColor = Color3.fromRGB(255, 255, 255);
     MainColor = Color3.fromRGB(28, 28, 28);
     BackgroundColor = Color3.fromRGB(20, 20, 20);
-    AccentColor = Color3.fromRGB(97, 87, 215);
-    OutlineColor = Color3.fromRGB(50, 50, 50);
+    AccentColor = Color3.fromRGB(147,112,219);
+    OutlineColor = Color3.fromRGB(147,112,219);
 
     Black = Color3.new(0, 0, 0);
 
@@ -2506,7 +2506,7 @@ function Library:CreateWindow(WindowTitle)
     });
 
     InputService.InputBegan:Connect(function(Input, Processed)
-        if Input.KeyCode == Enum.KeyCode.RightControl or (Input.KeyCode == Enum.KeyCode.RightShift and (not Processed)) then
+        if Input.KeyCode == Enum.KeyCode.Insert or (Input.KeyCode == Enum.KeyCode.Insert and (not Processed)) then
             Outer.Visible = not Outer.Visible;
             ModalElement.Modal = Outer.Visible;
 
