@@ -276,7 +276,7 @@ do
 
         local fov = aimbot.new_sector("fov", "Right")
         fov.element("Slider", "fov size", {default = {min = 30, max = 600, default = 100}}, function(State) Circle.Radius = State.Slider end)
-        fov.element("Toggle", "draw fov", nil, function(State) Circle.Visible = State.Toggle end):add_color({Color = Color3.fromRGB(84, 101, 255)}, nil, function(State) Circle.Color = State.Color end)
+        fov.element("Toggle", "draw fov", nil, function(State) Circle.Visible = State.Toggle end):add_color({Color = Color3.fromRGB(86, 179, 86)}, nil, function(State) Circle.Color = State.Color end)
         fov.element("Slider", "sides", {default = {min = 15, max = 100, default = 100}}, function(State) Circle.NumSides = State.Slider end)
         fov.element("Slider", "thickness", {default = {min = 1, max = 4, default = 1}}, function(State) Circle.Thickness = State.Slider end)
 
@@ -313,8 +313,8 @@ do
         friendlies.element("Combo", "types", {options = {"tool", "distance"}})
 
         local oof = players.new_sector("out of fov", "Right")
-        oof.element("Toggle", "enemies"):add_color({Color = Color3.fromRGB(84, 101, 255)})
-        oof.element("Toggle", "teammates"):add_color({Color = Color3.fromRGB(84, 101, 255)})
+        oof.element("Toggle", "enemies"):add_color({Color = Color3.fromRGB(86, 179, 86)})
+        oof.element("Toggle", "teammates"):add_color({Color = Color3.fromRGB(86, 179, 86)})
         oof.element("Slider", "size", {default = {min = 10, max = 15, default = 15}})
         oof.element("Slider", "offset", {default = {min = 100, max = 700, default = 400}})
         oof.element("Combo", "settings", {options = {"outline", "blinking"}})
