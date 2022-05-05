@@ -40,7 +40,7 @@ local menu
 do
     local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/scaffoldd/gui/main/other.lua"))()
 
-    menu = library.new([[LuckyCharms <font color="rgb(78, 93, 234)">v1</font>]], "nemv2\\")
+    menu = library.new([[LuckyCharms <font color="rgb(86, 165, 86)">v1</font>]], "nemv2\\")
     local tabs = {
         menu.new_tab("http://www.roblox.com/asset/?id=7300477598"),
         menu.new_tab("http://www.roblox.com/asset/?id=7300535052"),
