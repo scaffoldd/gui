@@ -1,0 +1,20 @@
+------------- Press F9
+
+for count = 1, 9999999 do
+	print(count)
+    		fireclickdetector(game.Workspace.Map["[Lettuce] - $0"].ClickDetector) -- Change the location of the item from where it is
+        wait()
+    		if game.Players.LocalPlayer.Backpack:FindFirstChild("Lettuce") then
+    			game.Players.LocalPlayer.Backpack:FindFirstChild("Lettuce").Parent = game.Players.LocalPlayer.Character
+end
+end
+
+--------------- Fire all click detector
+
+    for i,v in pairs(workspace:GetDescendants()) do
+        if v:IsA("ClickDetector") then
+        fireclickdetector(v)
+        end
+        end
+        
+---------------- End
